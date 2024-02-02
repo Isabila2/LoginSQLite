@@ -15,6 +15,7 @@ db.serialize(() => {
   db.run("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT, password TEXT)");
 });
 
+
 // Configuração da sessão
 app.use(
   session({
